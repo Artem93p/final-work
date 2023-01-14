@@ -4,7 +4,6 @@
 
 string[] firstArray = new string[5] {"1234", ":)", "computer", "world", "-2"};
 
-
 string[] NewArray( string [] firstArray)
 {
     int count = 0;
@@ -20,9 +19,6 @@ string[] NewArray( string [] firstArray)
     return newArray;
 }
 
-string [] secondArray = NewArray(firstArray);
-
-
 void ShowArray (string[] array )
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -30,6 +26,9 @@ void ShowArray (string[] array )
         Console.Write($"{array[i]} ");
     }
 }
+
+string [] secondArray = NewArray(firstArray);
+
 ShowArray(firstArray);
 System.Console.WriteLine();
 ShowArray(secondArray); 
